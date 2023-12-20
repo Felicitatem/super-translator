@@ -17,7 +17,7 @@
   height: 250px;
   width: 250px;
   margin-top: 10px;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   justify-content: center;
   align-items: center;
   display: flex;
@@ -36,49 +36,52 @@
   place-items: center;
 }
 .text {
-  position: relative;
   left: 50px;
   height: 100px;
+  margin-top: -10rem;
+  padding-top: -10rem;
   width:100%;
-  border-radius: 5px;
+  border-radius: 10px;
   border: 2px solid rgb(0, 0, 0);
   background-color: rgb(252, 248, 248);
   margin-top: 15px;
 }
 select#teamDropdownSelector{
+  margin-top: -4rem;
   left: 41%;
   border-radius: 25px;
   padding: 0.5rem;
   padding-right: 0.7rem;
 }
 .teamForm {
-  position: absolute;
-  top: 40%;
-  left: 43%;
+  position: relative; /* Change to relative positioning */
+  top: -3rem;
+  /* margin-right: 40%; */
   height: 40px;
+  margin-left: -10rem;
   border-radius: 25px;
   border: 1px #333 solid;
-  width:18%;
+  width: 200px;
   display: flex;
-  align-items: center;
+  align-items: first baseline;
   border-radius: 5px;
   border: 2px solid rgb(12, 15, 12);
   background-color: rgb(252, 248, 248);
   margin-top: 15px;
 }
 .btn {
-  position: absolute;
-  top: 70%;
+  position: relative;
+  top: -10%;
+  margin-left: 21%;
   left: 43%;
   height: 50px;
-  width:250px;
+  width:150px;
   border-radius: 5px;
   border: 2px solid black;
   background-color: transparent;
   color: #000;
   margin-top: 15px;
   border-radius: 25px;
-  
 }
 .btn:hover {
   color:white;
@@ -86,13 +89,16 @@ select#teamDropdownSelector{
   cursor: pointer;
   transition: ease-in-out 400 ms;
 }
-.sentence {
+.sentence {/*Input box*/
   height: content;
+  margin-top: 50%;
   width: 100%;
-  justify-content: center;
-  display: flex;
+  margin-top: -10rem;
+  padding-top: -10rem;
+  /* justify-content: center; */
+  display: absolute;
   padding: 30px;
-  align-items: center;
+  /* align-items: center; */
   margin-top: 20px;
 }
 .sentence h2 {
@@ -193,20 +199,5 @@ form{
   width: 400px;
   margin-right: 5%;
   justify-content: center;
-}
-.centered-button {
-    text-align: center;
-    margin-top: 20px; /* Adjust the margin as needed */
-}
-
-.centered-button a {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #007bff; /* Adjust the background color */
-    color: #fff; /* Adjust the text color */
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 16px;
-    font-weight: bold;
 }
 

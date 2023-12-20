@@ -10,17 +10,13 @@
             <a href="#">Home</a>
             <a href="#">About</a>
             <a href="#">Team</a>
-            <!-- <a href="#">Contact Us</a> -->
         </div>  
     </div>
-<div class="logo-heading">
-<div class="logo">
-    <img src="/static/img/Bhasha-removebg-preview.png" alt="BhashaSaarthi">
-</div>
-    <div class="sm">
-        <div class="centered-button">
-            <a href="/templates/doc.html" class="btn btn-primary">Doc Translation</a>
-        </div>  
+    <div class="logo-heading">
+        <div class="logo">
+            <img src="/static/img/Bhasha-removebg-preview.png" alt="BhashaSaarthi">
+        </div>
+        <div class="sm">
     <!-- <a href="https://wa.me/9090843994" class="nav__link">
         <i class="material-icons nav__icon">whatsapp</i>
       </a>
@@ -29,12 +25,8 @@
       </a> -->
     </div>
 </div>   
-<div class="centered-button">
-    <a href="/doc" class="btn btn-primary">Doc Translation</a>
-</div>
     <div class="container-data">
     <form method="POST" action="/">
-    <textarea type="text" class="text" name="sentence" placeholder="Enter or Paste sentences" Required></textarea><br>
     <select class="teamForm" id="teamDropdownSelector" type="text" name="inputvalue" placeholder="Select A Language" Required>
         <option disabled selected>Select a Language</option>
         <option id="WatfordVSManchester Utd" value="hi">Hindi</option>
@@ -62,6 +54,7 @@
         <!-- <option id="WatfordVSManchester Utd" value="es">Spanish</option> -->
         
     </select>
+    <textarea type="text" class="text" name="sentence" placeholder="Enter or Paste sentences" Required></textarea><br>
     <br>
         <button type="submit" class="btn btn-primary">TRANSLATE</button>
     </form>
@@ -81,7 +74,7 @@
         </h2>
         </div>
     {% endif %}
-    <div class="sentence"><h1 style="font-size:15px; color:red; font-weight:bold; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">!!!...More Languages will be added Soon...!!!</h1></div>
+    <!-- <div class="sentence"><h1 style="font-size:15px; color:red; font-weight:bold; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">!!!...More Languages will be added Soon...!!!</h1></div> -->
     <br>
     <div class="sentence"><h1 style="font-size:23px; color:rgb(169, 208, 242); font-weight:bold; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Bhashasaarthi</h1></div>
     <!-- <div class="container-posters">
@@ -98,7 +91,7 @@
         <img src="{{url_for('static', filename='img/sp-3.png')}}">
     </div>
     </div> -->
-    <div class="sentence"><h1 style="font-size:25px; color:#fff; font-weight:bold; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">CONTACT US</h1></div>
+    <div class="sentencehhh"><h1 style="font-size:25px; color:#fff; font-weight:bold; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">CONTACT US</h1></div>
     <div class="container-contact">
         <!-- <form  action="/contact" method="POST">
             <h3><b>Contact us</b></h3><br>
