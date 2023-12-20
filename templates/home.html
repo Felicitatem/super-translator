@@ -3,21 +3,24 @@
 {% block content %}
 <div class="container">
     <div class="head-nav">
-        <h3 style="font-size:1.5vw; color:rgb(255, 255, 255); font-weight:bold; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+        <h3 style="font-size:1.5vw; color:rgb(0,0,0); font-weight:bold; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
             RAIDERS IITM
         </h3>
         <div class="headnavleft">
             <a href="#">Home</a>
             <a href="#">About</a>
             <a href="#">Team</a>
-            <a href="#">Contact Us</a>
-        </div>
+            <!-- <a href="#">Contact Us</a> -->
+        </div>  
     </div>
 <div class="logo-heading">
 <div class="logo">
     <img src="/static/img/Bhasha-removebg-preview.png" alt="BhashaSaarthi">
 </div>
     <div class="sm">
+        <div class="centered-button">
+            <a href="/templates/doc.html" class="btn btn-primary">Doc Translation</a>
+        </div>  
     <!-- <a href="https://wa.me/9090843994" class="nav__link">
         <i class="material-icons nav__icon">whatsapp</i>
       </a>
@@ -26,9 +29,12 @@
       </a> -->
     </div>
 </div>   
+<div class="centered-button">
+    <a href="/doc" class="btn btn-primary">Doc Translation</a>
+</div>
     <div class="container-data">
     <form method="POST" action="/">
-    <input type="text" class="text" name="sentence" placeholder="Enter or Paste sentences" Required><br>
+    <textarea type="text" class="text" name="sentence" placeholder="Enter or Paste sentences" Required></textarea><br>
     <select class="teamForm" id="teamDropdownSelector" type="text" name="inputvalue" placeholder="Select A Language" Required>
         <option disabled selected>Select a Language</option>
         <option id="WatfordVSManchester Utd" value="hi">Hindi</option>
@@ -37,7 +43,7 @@
         <option id="WatfordVSManchester Utd" value="ta">Tamil</option>
         <!-- <option id="WatfordVSManchester Utd" value="tr">Turkish</option> -->
         <option id="WatfordVSManchester Utd" value="pa">Punjabi</option>
-        <option id="WatfordVSManchester Utd" value="ur">Urdu</option>
+        <option id="WatfordVSManchester Utd" value="ur">Urdu</option>   
         <option id="WatfordVSManchester Utd" value="or">Odia</option>
         <option id="WatfordVSManchester Utd" value="ml">Malayalam</option>
         <option id="WatfordVSManchester Utd" value="mr">Marathi</option>
