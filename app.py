@@ -16,15 +16,25 @@ class Contacts(db.Model):
     msg = db.Column(db.String(500),nullable=False)
     date = db.Column(db.DateTime, default=datetime.utcnow)
 
-@app.route("/",methods=["GET", "POST"])
+@app.route("/", methods=["GET", "POST"])
 def home():
     if request.method == "POST":
-     t_sentence = request.form["sentence"]
-     language = request.form['inputvalue']
-     output = Translator().translate(t_sentence, dest=language)
+        t_sentence = request.form["sentence"]
+        language = request.form['inputvalue']
+        output = Translator().translate(t_sentence, dest=language).text
+        return render_template('home.html', output=output, sentence=t_sentence)
     else:
         return render_template("home.html")
-    return render_template('home.html',output=output,sentence=t_sentence)
+
+# @app.route("/",methods=["GET", "POST"])
+# def home():
+#     if request.method == "POST":
+#      t_sentence = request.form["sentence"]
+#      language = request.form['inputvalue']
+#      output = Translator().translate(t_sentence, dest=language)
+#     else:
+#         return render_template("home.html")
+#     return render_template('home.html',output=output,sentence=t_sentence)
 
 @app.route('/contact', methods=["GET","POST"])
 def contactdetailspage():

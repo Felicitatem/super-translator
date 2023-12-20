@@ -1,8 +1,9 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Mukta:wght@200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 * {
   border: 0;
   box-sizing: border-box;
   margin: 0;
+  font-family: poppins;
 }
 .container{
   height: content;
@@ -13,8 +14,8 @@
   flex-flow: column;
 }
 .logo-heading {
-  height: 150px;
-  width: 150px;
+  height: 250px;
+  width: 250px;
   margin-top: 10px;
   justify-content: center;
   align-items: center;
@@ -60,7 +61,7 @@
 }
 .btn:hover {
   color:black;
-  background-color:rgb(242, 181, 39);
+  background-color:rgb(218, 182, 99);
   cursor: pointer;
   transition: ease-in-out 400 ms;
 }
@@ -140,12 +141,27 @@
   justify-content: right;
 }
 .head-nav {
-  height:30px;
+  height:100px;
   width:100%;
   background-color: rgb(0, 109, 128);
   display:flex;
-  justify-content: center;
+  justify-content: space-between;
+  padding: 3vw;
   align-items: center;
   padding: 8px;
+}
+.head-nav h3{
+  font-size: 2vw;
+  margin-left: 2vw;
+  font-family: poppins;
+}
+.head-nav .headnavleft{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}.head-nav .headnavleft a{
+  color: aliceblue;
+  text-decoration: none;
+  font-size: 1.3vw;
 }
 
