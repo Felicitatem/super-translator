@@ -56,6 +56,11 @@
     </select>
     <textarea type="text" class="text" name="sentence" placeholder="Enter or Paste sentences" Required></textarea><br>
     <br>
+    <button type="submit" class="btn btn-primary">TRANSLATE</button>
+        <br>
+        <input type="file" id="pdfFile" accept=".pdf" style="display: none;">
+        <label for="pdfFile">Select a PDF file:</label>
+        <button onclick="document.getElementById('pdfFile').click()">Choose File</button>
         <button type="submit" class="btn btn-primary">TRANSLATE</button>
     </form>
     </div>
